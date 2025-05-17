@@ -1,0 +1,384 @@
+.conte-prin {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  width: 100%;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #333333, #000000);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+
+
+.btn-grd {
+  padding: 8px 12px;
+  background-color: #509B11;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  gap: 20px;
+}
+
+
+
+.c-muscle-group {
+  flex: 1 1 calc(25% - 20px); 
+  min-width: 200px; 
+  margin-bottom: 10px; 
+}
+
+.c-muscle-group-button {
+  width: 100%;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.c-muscle-group-button:focus {
+  outline: none;
+}
+
+.c-exercise-list {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.c-exercise-button {
+  display: block;
+  width: 100%;
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.c-exercise-button:focus {
+  outline: none;
+  background-color: #e9ecef;
+}
+
+
+
+.c-days-of-week {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.c-day-button {
+  flex: 1;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+  text-align: center;
+}
+
+.c-day-button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.c-days-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #1d1907;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  width: 1250px;
+}
+
+.c-weekly-plan {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  width: 100%; 
+}
+
+.c-day-column {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.c-day-column h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.c-day-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.c-day-column li {
+  background-color: #b0e23c;
+  padding: 8px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  text-align: left;
+  justify-content: space-between;
+}
+
+.c-active-day {
+  border: 2px solid #64cf00;
+}
+
+.c-exercise-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/*
+.c-exercise-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  width: 100%; 
+}
+*/
+
+.c-remove-button {
+  background-color: #ec3434;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 8px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.c-remove-button:hover {
+  background-color: #ff1e00;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.c-remove-button:focus {
+  outline: none;
+}
+
+.c-remove-button:active {
+  background-color: #e03e1f;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ipt-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px; 
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 2px solid #0a0a0a;
+  border-radius: 10px;
+  background-color: #f3f9fc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 700px; 
+  flex-shrink: 0; 
+}
+
+.wrapper {
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+  padding: 0; 
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    display: block; 
+    padding: 0; 
+  }
+}
+
+
+.ipt-container input {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #ffffff;
+}
+
+.c-user-list {
+  margin-top: 10px;
+  list-style-type: none;
+  padding: 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.c-user-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.c-user-list li:hover {
+  background-color: #e7f3ff;
+}
+
+.c-selected-user {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #1b1a1a;
+}
+
+.srch-container,
+.rt-name-container {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  /*border: 1px solid red;*/
+}
+
+.user-sch-input{
+  width: 100%;
+  margin-top: 0%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: #ffffff;
+  /*border: 5px solid red;*/
+}
+.rt-name-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: #ffffff;
+}
+
+.user-sch-input::placeholder,
+.rt-name-input::placeholder {
+  color: #999;
+}
+
+
+.act-st-container {
+  border: 2px solid #ddd; 
+  border-radius: 8px; 
+  padding: 10px;
+  margin: 0px 0; 
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  height: 100%;
+}
+
+.act-st-container label {
+  font-size: 16px; 
+  color: #333; 
+  display: block; 
+  margin-bottom: 8px; 
+}
+
+
+.act-st-container select {
+  width: 100%; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fff; 
+  color: #333; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  outline: none; 
+  border: 1px solid rgb(56, 147, 231);
+}
+
+.user-sch-button {
+  padding: 8px 12px;
+  margin-top: 10px;
+  background-color: #3c9bc0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 90%;
+  gap: 20px;
+}
+
+.btn-bck-cont {
+  display: flex;
+  justify-content: flex-start; 
+  padding: 10px;
+  width: 100%;
+}
+
+.bck-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.activity-state-select {
+  width: 100%; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #fff; 
+  color: #333; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  outline: none; 
+  appearance: none; 
+  position: relative;
+}
+
+
